@@ -1,4 +1,4 @@
-6a1b41315ea8f56ef3db2750db8c7954 *DESCRIPTION
+75eafa21d9db2691b1388f82f28458c6 *DESCRIPTION
 a5d751bdb5810de2774efdd42afecd24 *NAMESPACE
 8edde771772fe4763734bb0d6f0084f5 *R/AUC.r
 7f46cc6652436eb919ebd1adca7cf46e *R/MTPS.R
@@ -19,7 +19,7 @@ dbd87e0767431ead246babb11f3c6c1b *data/Internal.rda
 1f8ce7ed7a32e77818247dc118172744 *inst/CITATION
 d99123d7b63f27b2db1645bf5cb29086 *inst/doc/Guide.R
 e305337e72bdd57e8cac137fede6accf *inst/doc/Guide.Rmd
-e024d1ebfb13db1df06c29ea91fbcca8 *inst/doc/Guide.html
+f79170e56ea2e3606691b3e09efc7ded *inst/doc/Guide.html
 4b159ecae99fd0ea62b6c4271f0d07f9 *man/AUC.Rd
 e35e25aba8144914fab465a67ecf69db *man/HIV_data.Rd
 0bbec9d0f2c5b68345fa5aeaf82aa750 *man/Internal_data.Rd
