@@ -52,8 +52,13 @@ rs.multiFit <- function(yhat, ymat, xmat=NULL,
   {
     if(family[kk]=="gaussian") resi <- ymat-yhat
     if(family[kk]== "binomial") resi <- resid.bin(ymat, yhat, xmat, type=resid.type, resid.std=resid.std)
+    xmat=yhat[,-kk]
+    if(ny==2){
+      xmat <-as.data.frame(xmat)
+      names(xmat)<-paste0("X",c(1:ny)[-kk])
+    }
 
-    fit[[kk]] <- method[[kk]](xmat=yhat[,-kk], ymat=resi[,kk], family="gaussian")
+    fit[[kk]] <- method[[kk]](xmat=xmat, ymat=resi[,kk], family="gaussian")
     models[[kk]] <- fit[[kk]]$model
     y.fitted[,kk] <- fit[[kk]]$y.fitted
   }
@@ -81,6 +86,11 @@ predict.rs.multiFit <- function(object, newdata, ...) {
   for(ii in 1:ny)
   {
     xx <- newdata[,-ii]
+    if(ny==2){
+      xx <-as.data.frame(xx)
+      names(xx)<-paste0("X",c(1:ny)[-ii])
+    }
+    
     model <- object$model[[ii]]
     resid.mat[,ii] <- object$fit[[ii]]$predFun(model, xx)
 
@@ -99,7 +109,7 @@ predict.rs.multiFit <- function(object, newdata, ...) {
       hats <- rowSums(QQ^2) # diagonal of hat matrix X(X'X)^(-1)X', used to standardize residuals
     }else
     {
-      hats <- rep(0, nrow(newdata[,bindex]))
+      hats <- rep(0, nrow(matrix(newdata[,bindex])))
     }
     if(object$resid.type == "pearson")
       pred[,bindex] <- newdata[,bindex] + resid.mat[,bindex]*sqrt(newdata[,bindex]*(1-newdata[,bindex]))*sqrt(1-hats)

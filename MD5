@@ -1,4 +1,4 @@
-75eafa21d9db2691b1388f82f28458c6 *DESCRIPTION
+f45297fdde27f970beb7e6482646dfa8 *DESCRIPTION
 a5d751bdb5810de2774efdd42afecd24 *NAMESPACE
 8edde771772fe4763734bb0d6f0084f5 *R/AUC.r
 7f46cc6652436eb919ebd1adca7cf46e *R/MTPS.R
@@ -11,15 +11,15 @@ e07446159e9935d5709ea6456e74aa90 *R/list.learners.R
 3700e6b4ef6e0ac91a1ee6026ad2831f *R/method.R
 65ba018037b5ab7ff8acba91764d99f3 *R/multiFit.R
 34ac40fedabe4738c3e1dc0910264281 *R/residuals.R
-4a04bed4da23a161410825a95049faa6 *R/rsMultiFit.R
+47fdab3115d2b22721719320737eee5f *R/rsMultiFit.R
 c436475ce483deb644c0943e4fc29e61 *README.md
-05cf3f51dcce99eddf252d8e72b34924 *build/vignette.rds
+f90adf6e5bdc13bdc18076083db9449b *build/vignette.rds
 48cfe5fee809c114cddd28f8d128a0af *data/HIV.rda
 dbd87e0767431ead246babb11f3c6c1b *data/Internal.rda
-1f8ce7ed7a32e77818247dc118172744 *inst/CITATION
+1e101505dd1b61b40a95491b99795b18 *inst/CITATION
 d99123d7b63f27b2db1645bf5cb29086 *inst/doc/Guide.R
 e305337e72bdd57e8cac137fede6accf *inst/doc/Guide.Rmd
-f79170e56ea2e3606691b3e09efc7ded *inst/doc/Guide.html
+6b235f351ba2a9bce6969b0411c06884 *inst/doc/Guide.html
 4b159ecae99fd0ea62b6c4271f0d07f9 *man/AUC.Rd
 e35e25aba8144914fab465a67ecf69db *man/HIV_data.Rd
 0bbec9d0f2c5b68345fa5aeaf82aa750 *man/Internal_data.Rd
